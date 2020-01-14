@@ -27,33 +27,21 @@
 				</div>
 			</section>
 
-		<!-- One -->
+        {%  for listing in job_listings %}
 			<section id="one" class="main special">
 				<div class="container">
 					<span class="image fit primary"><img src="{%  static 'jobs_app/images/pic01.jpg' %}" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>Software Developer</h2>
+							<h2>{{ listing.title }}</h2>
 						</header>
-						<p>Hello, we are looking for a software developer. If you're interested please email me at funsho@email.com</p>
+						<p>{{ listing.description }}</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
+        {%  endfor %}
 
-        <!-- Two -->
-			<section id="two" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="{%  static 'jobs_app/images/pic01.jpg' %}" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>Cook</h2>
-						</header>
-						<p>Hello, we are looking for a cook for our five star restaurant. If you're interested please email me at funsho@email.com</p>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
 
 		<!-- Footer -->
 			<section id="footer">
